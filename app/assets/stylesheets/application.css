@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+ .btn-primary {
+    background-color: rgb(81, 81, 232);
+    width: 100px;
+    height: 35px;
+    color: azure;
+    border-radius: 16px;
+ }
+ .btn {
+    width: 100px;
+    height: 35px;
+    border-radius: 16px;
+ }
+
+.hidden {
+   visibility: hidden;
+ }

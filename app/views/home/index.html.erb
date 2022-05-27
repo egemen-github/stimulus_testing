@@ -1,2 +1,42 @@
 <h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<div data-controller="text-input">
+    <input type="text" data-action="text-input#changed" data-text-input-target="input">
+    <h1 data-text-input-target="output"></h1>
+</div>
+
+<div data-controller="styling" data-styling-primary-class="btn-primary">
+    <button class="btn" data-styling-target="button" data-action="styling#clicked">
+        CLIK ME
+    </button>
+</div>
+
+
+<div data-controller="toggle" data-toggle-hidden-class="hidden">
+    <button class="btn" data-action="toggle#hidden">
+        TOGGLE
+    </button>
+    <h1 data-toggle-target="text">HIDE ME NOW</h1>
+</div>
+
+<div data-controller="toggle" data-toggle-hidden-class="hidden">
+    <button class="btn" data-action="toggle#hidden" data-toggle-target="text">
+        Show Another
+    </button>
+    <h1 class="hidden" data-toggle-target="text">ShowUP</h1>
+</div>
+
+<div data-controller="toggle" data-toggle-hidden-class="hidden">
+    <button class="btn" data-action="toggle#hidden">
+        Open
+    </button>
+    
+    <div data-toggle-target="text">
+        <h1>HIDE ME NOW</h1>
+        <h1>HIDE ME NOW</h1>
+        <h1>HIDE ME NOW</h1>
+        <h1>HIDE ME NOW</h1>
+        <h1>HIDE ME NOW</h1>
+        <h1>HIDE ME NOW</h1>
+    </div>
+</div>
